@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Autos Paco</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header>
+    <div class="contenedor-header">
+      <div class="izquierda-header">
+        <button class="menu-header" aria-label="Menú" aria-expanded="false" aria-controls="menu">&#9776;</button>
+        <img class="logo" src="imagenes/Logo.png" alt="Logo Autos Paco">
+      </div>
+      <nav class="derecha-header" role="navigation">
+        <ul aria-label="Menú de navegación principal">
+          <li><a href="#">Sobre nosotros</a></li>
+          <li><a href="#">Encargos</a></li>
+          <li><a href="#">Marcas</a></li>
+          <li><a href="#">Vehículos</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+        <button class="usuario-header" aria-label="Usuario">&#128100;</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="seccion-busqueda">
+      <div class="contenido">
+        <div class="texto-contenido">
+          <h1>El coche que buscas... ¡LO TENEMOS!</h1>
+          <div class="contenedor-busqueda">
+            <label for="barra-busqueda">Buscar coches:</label>
+            <input id="barra-busqueda" type="text" class="barra-busqueda" placeholder="¿Qué estás buscando?...">
+            <button class="btn-buscar">¡ENCUÉNTRALO!</button>
+          </div>
+        </div>
+        <div class="contenedor-imagen">
+          <img src="imagenes/CochePortada.png" alt="Coche de portada">
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion-coches">
+      <br>
+      <h3>Todos nuestros coches:</h3>
+      <div class="cuadrícula-coches">
+        <div class="tarjeta-coche">
+          <img src="imagenes/Cupra.jpg" alt="Foto de un coche deportivo modelo Cupra León">
+          <div class="info-coche">
+            <h4>Cupra León</h4>
+            <p>49,500€</p>
+            <span>270HP Automático</span>
+          </div>
+        </div>
+        <div class="tarjeta-coche">
+          <img src="imagenes/M5.jpg" alt="Foto de un coche deportivo modelo BMW M5">
+          <div class="info-coche">
+            <h4>BMW M5</h4>
+            <p>135,000€</p>
+            <span>777HP Automático</span>
+          </div>
+        </div>
+        <div class="tarjeta-coche">
+          <img src="imagenes/Supra.jpg" alt="Foto de un coche deportivo modelo Toyota Supra">
+          <div class="info-coche">
+            <h4>Toyota Supra</h4>
+            <p>67,500€</p>
+            <span>360HP Manual</span>
+          </div>
+        </div>
+        
+        <!-- Nueva tarjeta de coche 4: Audi RS7 -->
+        <div class="tarjeta-coche">
+          <img src="imagenes/AudiRS7.jpg" alt="Foto de un coche deportivo modelo Audi RS7">
+          <div class="info-coche">
+            <h4>Audi RS7</h4>
+            <p>120,000€</p>
+            <span>600HP Automático</span>
+          </div>
+        </div>
+        
+        <!-- Nueva tarjeta de coche 5: Mercedes-Benz AMG GT -->
+        <div class="tarjeta-coche">
+          <img src="imagenes/MercedesAMGGT.jpg" alt="Foto de un coche deportivo modelo Mercedes-Benz AMG GT">
+          <div class="info-coche">
+            <h4>Mercedes-Benz AMG GT</h4>
+            <p>145,000€</p>
+            <span>510HP Automático</span>
+          </div>
+        </div>
+        
+        <!-- Nueva tarjeta de coche 6: Porsche 911 Turbo -->
+        <div class="tarjeta-coche">
+          <img src="imagenes/Porsche911Turbo.jpg" alt="Foto de un coche deportivo modelo Porsche 911 Turbo">
+          <div class="info-coche">
+            <h4>Porsche 911 Turbo</h4>
+            <p>160,000€</p>
+            <span>640HP Automático</span>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="contenedor-footer">
+      <div class="columna-footer">
+        <h4>AUTOS PACO</h4>
+        <p>Encuéntranos en:</p>
+        <div class="iconos-sociales">
+          <a href="#">Facebook</a>
+          <a href="#">Instagram</a>
+          <a href="#">YouTube</a>
+        </div>
+      </div>
+      <div class="columna-footer">
+        <h4>Coches por categorías:</h4>
+        <ul>
+          <li>SUV</li>
+          <li>Todoterreno</li>
+          <li>Deportivo</li>
+          <li>Familiar</li>
+          <li>Utilitario</li>
+          <li>Cabrio</li>
+        </ul>
+      </div>
+      <div class="columna-footer">
+        <h4>Preguntas frecuentes:</h4>
+        <ul>
+          <li>¿Los coches son nuevos?</li>
+          <li>Garantías</li>
+          <li>Fiabilidad</li>
+          <li>Devoluciones</li>
+          <li>Pruebas</li>
+        </ul>
+      </div>
+      <div class="columna-footer">
+        <h4>Localización y contacto:</h4>
+        <p>Dir: Calle del Hierro, 59, 28045 Madrid</p>
+        <p>Tlf: 687948548</p>
+        <p>Email: concesionariopaco@gmail.com</p>
+        <p>Horario:</p>
+        <p>Lunes a viernes: 8:00 a 22:00</p>
+        <p>Sábados y domingos: 8:00 a 15:00</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

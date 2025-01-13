@@ -1,0 +1,338 @@
+/* Estilos Globales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  background-color: #f5f5f5;
+  color: #000;
+  overflow-x: hidden;
+}
+
+/* Encabezado */
+header {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.contenedor-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+}
+
+.izquierda-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo {
+  height: 50px;
+}
+
+.derecha-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.derecha-header ul {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+}
+
+.derecha-header ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.derecha-header ul li a:hover {
+  color: #f00;
+}
+
+.menu-header,
+.usuario-header {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 5px;
+  transition: transform 0.2s;
+}
+
+.menu-header:hover,
+.usuario-header:hover {
+  transform: scale(1.1);
+}
+
+/* Sección de Búsqueda */
+.seccion-busqueda {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5% 0;
+  position: relative;
+  background: url('imagenes/Fondo.jpg') no-repeat center center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.seccion-busqueda::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.7);
+  filter: blur(8px);
+  z-index: -1;
+}
+
+.contenido {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.texto-contenido {
+  width: 55%;
+  color: rgb(0, 0, 0);
+  text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.9);
+}
+
+.texto-contenido h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.contenedor-busqueda {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+label{
+  color: #000;
+}
+
+.barra-busqueda {
+  width: 80%;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-buscar {
+  background-color: red;
+  color: rgb(6, 5, 5);
+  padding: 15px 25px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+.btn-buscar:hover {
+  background-color: darkred;
+}
+
+.contenedor-imagen {
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.contenedor-imagen img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 30px;
+}
+
+/* Sección de Coches */
+
+h3 {
+  text-indent: 1em;
+  font-size: 35px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.cuadrícula-coches {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.tarjeta-coche {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+}
+
+.tarjeta-coche img {
+  width: 100%;
+  height: 65%;
+  object-fit: cover; 
+}
+
+.info-coche {
+  padding: 15px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+/* Pie de Página */
+footer {
+  background-color: #000;
+  color: white;
+  padding: 20px;
+}
+
+.contenedor-footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.columna-footer {
+  border-right: 4px solid rgba(255, 255, 255, 0.2);
+  padding-right: 20px;
+}
+
+.columna-footer:last-child {
+  border-right: none;
+}
+
+.columna-footer h4 {
+  margin-bottom: 10px;
+}
+
+.columna-footer ul {
+  list-style: none;
+}
+
+/* Media Queries */
+
+/*Móvil*/
+@media (max-width: 767px) {
+  .seccion-busqueda {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .texto-contenido {
+    width: 100%;
+    text-align: center;
+  }
+
+  .barra-busqueda {
+    width: 90%;
+  }
+
+  .btn-buscar {
+    width: 100%;
+  }
+
+  .contenedor-imagen {
+    display: none;
+  }
+
+  .derecha-header ul {
+    display: none;
+  }
+
+  .izquierda-header {
+    width: 100%;
+    justify-content: center; /* Centra el contenido dentro de izquierda-header */
+    display: flex; /* Asegura que sea un contenedor flex */
+    align-items: center; /* Centra el logo verticalmente */
+    gap: 0; /* Quita el espacio entre el logo y el botón */
+  }
+
+  .menu-header {
+    display: block;
+    background-color: #000;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+  }
+
+  .columna-footer {
+    border-bottom: 4px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 20px;
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .cuadrícula-coches {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contenedor-footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Ordenador */
+@media (min-width: 1024px) {
+  header {
+    justify-content: center;
+  }
+
+  .logo {
+    margin: 0;
+  }
+
+  .cuadrícula-coches {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+  }
+
+  .contenedor-footer {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .seccion-busqueda .contenido {
+    gap: 30px;
+  }
+
+  .btn-buscar {
+    padding: 10px 20px;
+  }
+
+  .barra-busqueda {
+    max-width: 600px;
+  }
+}
